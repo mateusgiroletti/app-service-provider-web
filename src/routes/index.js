@@ -1,20 +1,22 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React from 'react';
+import { Switch } from 'react-router-dom';
 
-import SignIn from "../pages/SignIn";
-import SignUp from "../pages/SignUp";
-import Dashboard from "../pages/Dashboard";
-import Profile from "../pages/Profile";
+import Route from './Route';
 
+import SignUp from '../pages/SignUp';
+import SignIn from '../pages/SignIn';
 
-export default function MainRoutes() {
-	return (
-		<Routes>
-			<Route path="/" element={<SignIn />} />
-			<Route path="/register" element={<SignUp />} />
+import Dashboard from '../pages/Dashboard';
+import Profile from '../pages/Profile';
 
-			<Route path="/dashboard" element={<Dashboard />} />
-			<Route path="/profile" element={<Profile />} />
-		</Routes>
-	);
+export default function Routes() {
+    return (
+        <Switch>
+            <Route path="/" exact component={SignIn} />
+            <Route path="/register" component={SignUp} />
+
+            <Route isPrivate path="/dashboard" component={Dashboard} />
+            <Route isPrivate path="/profile" component={Profile} />
+        </Switch>
+    );
 }
