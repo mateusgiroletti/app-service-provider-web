@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 // import { Container } from './styles';
 
 function Profile() {
-  return <div />;
+	return <h1>profi</h1>;
 }
 
 export default Profile;
