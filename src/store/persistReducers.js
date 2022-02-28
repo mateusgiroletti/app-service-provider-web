@@ -1,10 +1,10 @@
 import storage from 'redux-persist/lib/storage';
 import { persistReducer } from 'redux-persist';
 
-const reducers = () => {
+export default reducers => {
     const persistedReducer = persistReducer(
         {
-            key: 'gobarber',
+            key: 'appService',
             storage,
             whitelist: ['auth', 'user'],
         },
@@ -13,5 +13,3 @@ const reducers = () => {
 
     return persistedReducer;
 };
-
-export default reducers;

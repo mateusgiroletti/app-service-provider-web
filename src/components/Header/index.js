@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Notifications from '../Notifications';
 
-import logo from '../../assets/logoHeader.svg';
+import logo from '../../assets/logo.png';
 
 import { Container, Content, Profile } from './styles';
 

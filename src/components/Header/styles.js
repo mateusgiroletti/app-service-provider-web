@@ -22,11 +22,13 @@ export const Content = styled.div`
             margin-right: 20px;
             padding-right: 20px;
             border-right: 1px solid #eee;
+            width: 65px;
+
         }
 
         a {
             font-weight: bold;
-            color: #7159c1;
+            color: #3867d6;
         }
     }
 

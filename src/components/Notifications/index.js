@@ -52,7 +52,7 @@ function Notifications() {
     return (
         <Container>
             <Badge onClick={handleToogleVisible} hasUnread={hasUnread}>
-                <MdNotifications color="7159c1" size={20} />
+                <MdNotifications color="3867d6" size={20} />
             </Badge>
 
             <NotificationList visible={visible}>
