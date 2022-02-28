@@ -27,7 +27,7 @@ function SignUp() {
 
     return (
         <>
-            <img src={logo} alt='AppService' />
+            <img src={logo} alt='AppService' width={150} />
 
             <Form schema={schema} onSubmit={handleSubmit}>
                 <Input name="name" type="text" placeholder="Nome Completo" />
